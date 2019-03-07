@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.swp.core</groupId>
+	<artifactId>swp-core</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>swp-core-common</module>
+		<module>swp-core-dao</module>
+		<module>swp-core-client</module>
+		<module>swp-core-manager</module>
+		<module>swp-core-service</module>
+	</modules>
+	<properties>
+		<swp-core-common.version>0.0.1-SNAPSHOT</swp-core-common.version>
+		<swp-core-dao.version>0.0.1-SNAPSHOT</swp-core-dao.version>
+		<swp-core-client.version>0.0.1-SNAPSHOT</swp-core-client.version>
+		<swp-core-manager.version>0.0.1-SNAPSHOT</swp-core-manager.version>
+	</properties>
+
+	<dependencyManagement>
+
+		<dependencies>
+			<dependency>
+				<groupId>com.swp.core</groupId>
+				<artifactId>swp-core-common</artifactId>
+				<version>${swp-core-common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.swp.core</groupId>
+				<artifactId>swp-core-client</artifactId>
+				<version>${swp-core-client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.swp.core</groupId>
+				<artifactId>swp-core-dao</artifactId>
+				<version>${swp-core-dao.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.swp.core</groupId>
+				<artifactId>swp-core-manager</artifactId>
+				<version>${swp-core-manager.version}</version>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>
+</project>
